@@ -1,0 +1,52 @@
+
+.content{
+    display: flexbox;
+    border: 5px solid black ;
+    height: 80vh;
+    margin: 2vw;
+    padding: 5vh;
+    padding:auto;
+}
+body{
+    background-color: aliceblue;
+}
+.head{
+    text-align: center;
+    font-family: 'papyrus','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.slideImage{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top: 0px;
+    display:inline-block;
+    box-shadow: 9px 9px 9px black;
+    border-radius: 6px;
+}
+.slider{
+    overflow: hidden;
+    height: 80vh;
+    width: 80vw;
+    display: inline-flex;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    transform: translate(0px,-50%);
+    left: 15%;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 6px;
+}
+.next{
+   left: 75%;
+}
+
+.prev:hover,.next:hover{
+    background-color: black;
+}
